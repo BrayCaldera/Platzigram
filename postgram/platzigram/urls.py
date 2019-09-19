@@ -23,7 +23,6 @@ from django.conf.urls.static import static
 from django.urls import path
 
 # Utilities
-from platzigram import views as local_views
 from posts import views as posts_views
 from users import views as users_views
 
