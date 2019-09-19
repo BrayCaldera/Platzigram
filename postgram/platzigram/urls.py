@@ -31,10 +31,6 @@ urlpatterns = [
 
     path('admin/', admin.site.urls),
 
-    path('hello-world/', local_views.hello_world, name='hello_world'),
-    path('sorted/', local_views.sorted_json, name='sort'),
-    path('hi/<str:name>/<int:age>', local_views.say_hi, name='hi'),
-
     path('', posts_views.list_posts, name='feed'),
     path('posts/new/', posts_views.create_post, name='create_post'),
 
