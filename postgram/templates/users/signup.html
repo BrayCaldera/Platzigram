@@ -6,11 +6,7 @@
 
 {% block container %}
 
-    {% if error %}
-        <p class="alert alert-danger">{{ error }}</p>
-    {% endif %}
-
-    <form action="{% url 'signup' %}" method="POST">
+    <form action="{% url 'users:signup' %}" method="POST">
         {% csrf_token %}
 
         {{ form.as_p }}
@@ -19,6 +15,6 @@
 
     </form>
 
-    <p class="mt-4">Do you have an account? <a href="{% url "login" %}">Sign in here!</a></p>
+    <p class="mt-4">Do you have an account? <a href="{% url "users:login" %}">Sign in here!</a></p>
 
 {% endblock %}

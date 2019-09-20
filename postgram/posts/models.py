@@ -1,15 +1,12 @@
-"""Posts Models."""
+"""Posts models."""
 
 # Django
 from django.db import models
 from django.contrib.auth.models import User
 
-# Models
-
-
 
 class Post(models.Model):
-    """Posts Models."""
+    """Post model."""
 
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     profile = models.ForeignKey('users.Profile', on_delete=models.CASCADE)
@@ -21,5 +18,5 @@ class Post(models.Model):
     modified = models.DateTimeField(auto_now=True)
 
     def __str__(self):
-        """Return title and username"""
+        """Return title and username."""
         return '{} by @{}'.format(self.title, self.user.username)

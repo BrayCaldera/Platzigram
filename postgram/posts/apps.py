@@ -4,6 +4,7 @@ from django.apps import AppConfig
 
 
 class PostsConfig(AppConfig):
-    """Pst application settings."""
+    """Posts application settings."""
+
     name = 'posts'
     varbose_name = 'Posts'
