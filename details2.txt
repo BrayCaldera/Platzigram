@@ -1,7 +1,0 @@
-website
-biography
-phone_number
-profile picture
-
-created
-modified
